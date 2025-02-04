@@ -6,3 +6,56 @@ RESET
   margin: 0;
   padding: 0;
 }
+
+/**********
+GENERAL
+**********/
+.container{
+  max-width: 1000px;
+  margin: auto;
+}
+
+/**********
+TYPOGRAPHY
+**********/
+body{
+  font-family: "Montserrat", serif;
+}
+
+/**********
+ACCORDION LIST
+**********/
+.accordion-list > *:not(:last-child){
+  margin-bottom: 16px;
+}
+
+/**********
+ACCORDION
+**********/
+.accordion{
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.accordion > *{
+  padding: 0.75rem;
+}
+
+.accordion-title{
+  background-color: #efefef;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-btn{
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.accordion-title.active {
+  background-color: orange;
+}
